@@ -1,32 +1,26 @@
 public class FizBuzz0
 {
-    int i = 0;
-    int a = 0;
-    int b = 0;
-    
     public void run() {
-        for (int i=0; i <= 100; i=i+1) {
-            System.out.println(i);
+        int a = 3;
+        int b = 5;
+        
+        for (int i=1; i <= 100; i=i+1) {
+            String s = "";
+            
             if (i==a) {
-                System.out.println("Fizz");
+                a=a+3;
+                s = s + "Fizz";
             }
             if (i==b) {
-                System.out.println("Buzz");
+                b=b+5;
+                s = s + "Buzz";
             }
-            else {
+            if (s=="") {
                 System.out.println(i);
+            } else {
+                System.out.println(s);
             }
         }
-        
-        a = 0;
-        do {
-            a=a+3;
-        } while (a <= 100);
-        
-        b = 0;
-        do {
-            b=b+5;
-        } while (b <= 100);
     }
     
     public static void main(String[] args)
