@@ -8,11 +8,11 @@ public class FizBuzz0
             String s = "";
             
             if (i==a) {
-                a=a+3;
+                a = a + 3;
                 s = s + "Fizz";
             }
             if (i==b) {
-                b=b+5;
+                b = b + 5;
                 s = s + "Buzz";
             }
             if (s=="") {
